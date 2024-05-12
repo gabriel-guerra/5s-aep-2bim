@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  db_dev:
+    image: postgres:latest
+    restart: always
+    container_name: aep_dev
+    environment:
+      POSTGRES_DB: bookworld
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+  db_test:
+    image: postgres:latest
+    restart: always
+    container_name: aep_test
+    environment:
+      POSTGRES_DB: bookworld
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+  db:
+    image: postgres:latest
+    restart: always
+    container_name: aep
+    environment:
+      POSTGRES_DB: bookworld
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
