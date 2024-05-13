@@ -1,19 +1,32 @@
-import { Model } from "sequelize";
-import { sequelize } from "../database";
 import { CommonEnum } from "../enums/common.enum";
 
 class CommonRepository{
 
+   async syncTable(model: any){
+      try{
+         await model.sync()
+      } catch(error){
+         console.error(`Error syncing table ${model.toString()}: ${error}`)
+      }
+   }
+
+   async dropTable(model: any){
+      if (process.env.NODE_ENV == 'DEV'){
+         await model.drop();
+      }
+   }
+   
    async create(model: any, data: any){
       try{
          const response = await model.create(data)
          return response
       }catch(error){
+         console.error(`Error ${error}`)
          return CommonEnum.NOT_CREATED
       }
    }
 
-   async findAll(model: any, display: any){
+   async findAll(model: any){
       return await model.findAll()
    }
 
@@ -38,9 +51,6 @@ class CommonRepository{
          return CommonEnum.NOT_DELETED
       }
    }
-
-   //criar tabelas -> await User.sync();
-   //https://sequelize.org/docs/v6/core-concepts/model-basics/
 
 }
 

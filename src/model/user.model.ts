@@ -1,10 +1,14 @@
 import { Model, DataTypes } from "sequelize";
 import { sequelize } from "../database";
+import bcrypt from 'bcrypt'
 
 class User extends Model {
     declare id: number;
-    declare firstName: string;
-    declare lastName: string;
+    declare fullName: string;
+    declare birthdate: DataTypes.DateOnlyDataType;
+    declare email: string;
+    declare password: string;
+    declare isAdmin: boolean;
 }
 
 User.init(
@@ -14,14 +18,34 @@ User.init(
             autoIncrement: true,
             primaryKey: true,
         },
-        firstName: {
+        fullName: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        lastName: {
+        birthdate: {
+            type: DataTypes.DATEONLY,
+            allowNull: false
+        },
+        email: {
             type: DataTypes.STRING,
             allowNull: false
-        },  
+        },
+        password: {
+            type: DataTypes.STRING,
+            set(value: string){
+                this.setDataValue('password', bcrypt.hash(value, 10, (err, result: string) => {
+                    if (err){
+                        throw new Error(`${err}`)
+                    }
+
+                    return result;
+                }))
+            }
+        },
+        isAdmin: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false
+        }
     },
     {
         sequelize,

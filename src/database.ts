@@ -1,6 +1,5 @@
 import { Sequelize } from "sequelize";
 
-let databaseName = 'bookworld';
-const sequelize = new Sequelize(`postgres://postgres:postgres@localhost:5432/${databaseName}`, {dialect: 'postgres'});
+const sequelize = new Sequelize(`postgres://${process.env.ADM_DB}:${process.env.ADM_PW}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DATABASE_NAME}`, {dialect: 'postgres'});
 
 export { sequelize }
