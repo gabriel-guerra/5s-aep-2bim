@@ -16,9 +16,12 @@ class App{
         sequelize.authenticate()
             .then(() => {
                 console.log('Connected to database');
-            }).catch(error => { 
+                sequelize.sync();
+            })
+            .catch(error => { 
                 console.error('Unable to connect to the database:', error);
             })
+
     }
 
     private middleware(): void{
