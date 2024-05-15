@@ -9,7 +9,6 @@ export { router }
 router.get('/hello', hello.hw)
 
 //database
-router.get('/table/user/sync', userController.syncTable)
 router.get('/table/user/drop', userController.dropTable)
 
 

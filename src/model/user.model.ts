@@ -32,21 +32,9 @@ User.init(
         },
         password: {
             type: DataTypes.STRING,
-            async set(value: string){
-                this.setDataValue('password', ()=>{
-                    return new Promise ((resolve, reject) => {
-                        
-                        bcrypt.hash(value, 10, (function(err, result) {  
-                            if (err) {
-                                reject(err);
-                            } 
-                            
-                            console.log(result)
-                            resolve(result);
-                            
-                        }));
-                    });
-                })
+            set(value: string){
+                const hash = bcrypt.hashSync(value, 10);
+                this.setDataValue('password', hash)
             }
         },
         isAdmin: {

@@ -2,14 +2,6 @@ import { CommonEnum } from "../enums/common.enum";
 
 class CommonRepository{
 
-   async syncTable(model: any){
-      try{
-         await model.sync()
-      } catch(error){
-         console.error(`Error syncing table ${model.toString()}: ${error}`)
-      }
-   }
-
    async dropTable(model: any){
       if (process.env.NODE_ENV == 'DEV'){
          await model.drop();

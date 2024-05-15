@@ -8,10 +8,6 @@ class UserService{
         return await commonRepository.dropTable(User)
     }
 
-    async syncTable(){
-        return await commonRepository.syncTable(User)
-    }
-
     async create(data: userDTO){
         return await commonRepository.create(User, data)
     }

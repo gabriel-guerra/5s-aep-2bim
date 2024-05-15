@@ -8,10 +8,6 @@ class UserController{
     async dropTable(req: Request, res: Response){
         return res.send(await userService.dropTable())
     }
-
-    async syncTable(req: Request, res: Response){
-        return res.send(await userService.syncTable())
-    }
     
     async create(req: Request, res: Response){
 
