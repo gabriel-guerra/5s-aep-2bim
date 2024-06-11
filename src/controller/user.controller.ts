@@ -1,7 +1,6 @@
 import userService from "../service/user.service";
 import { Request, Response } from "express";
 import dataValidation from "../middleware/data.validation";
-import commonRepository from "../repository/common.repository";
 
 class UserController{
 

@@ -1,6 +1,6 @@
 import commonRepository from "../repository/common.repository";
 import { User } from "../model/user.model";
-import { userDTO } from "../types/user.type.DTO";
+import { UserDTO } from "../dto/user.dto";
 
 class UserService{
 
@@ -8,7 +8,7 @@ class UserService{
         return await commonRepository.dropTable(User)
     }
 
-    async create(data: userDTO){
+    async create(data: UserDTO){
         return await commonRepository.create(User, data)
     }
 
@@ -20,7 +20,7 @@ class UserService{
         return await commonRepository.findConditions(User, conditions)
     }
 
-    async update(data: userDTO, conditions: any){
+    async update(data: UserDTO, conditions: any){
         return await commonRepository.update(User, data, conditions)
     }
 
