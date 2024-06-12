@@ -30,7 +30,7 @@ Certificate.init(
     },
     {
         sequelize,
-        modelName: 'User',
+        modelName: 'Certificate',
         timestamps: true
     }
 )

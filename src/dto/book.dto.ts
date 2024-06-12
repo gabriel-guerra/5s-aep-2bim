@@ -1,5 +1,3 @@
-import { DateOnlyDataType } from "sequelize";
-
 export class BookDTO{
     isbn: string;
     title: string;
