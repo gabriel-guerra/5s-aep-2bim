@@ -9,11 +9,12 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form action="dashboard.html">
-            <input type="text" placeholder="Usuário" required>
-            <input type="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
+        <form id="login-form" action="dashboard.html" onsubmit="login(event)">
+            <input name="user" type="text" placeholder="Usuário" required>
+            <input name="password type="password" placeholder="Senha" required>
+            <button id="login-submit" type="submit">Entrar</button>
         </form>
     </div>
+<script src="./login.js"></script>
 </body>
 </html>

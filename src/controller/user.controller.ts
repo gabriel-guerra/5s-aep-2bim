@@ -24,6 +24,17 @@ class UserController{
     async findAll(req: Request, res: Response){
         return res.json(await userService.findAll());
     }
+
+    async findConditions(req: Request, res: Response){
+        const user = await userService.findAll();
+        if(user){
+            res.send(true);
+        }else{
+            res.send(false);
+        }
+    }
+
+
 }
 
 export default new UserController;
