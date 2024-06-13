@@ -11,6 +11,8 @@ export { router }
 
 router.get('/hello', hello.hw)
 
+router.get('/', hello.index)
+
 //database
 router.get('/table/user/drop', userController.dropTable)
 
