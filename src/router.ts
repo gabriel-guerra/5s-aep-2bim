@@ -19,6 +19,7 @@ router.get('/table/user/drop', userController.dropTable)
 
 router.post('/user/create', userController.create);
 router.get('/user', userController.findAll);
+router.post('/user', userController.findConditions);
 
 router.post('/book/create', bookController.create);
 router.get('/book', bookController.findAll);

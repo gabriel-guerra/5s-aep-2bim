@@ -26,8 +26,11 @@ class UserController{
     }
 
     async findConditions(req: Request, res: Response){
-        const user = await userService.findAll();
-        if(user){
+        
+        console.log(req.body);
+        const user = await userService.findConditions(req.body);
+        console.log(user)
+        if(user.length > 0){
             res.send(true);
         }else{
             res.send(false);

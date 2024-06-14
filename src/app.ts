@@ -1,6 +1,7 @@
 import express from 'express'
 import { router } from './router';
 import { sequelize } from './database';
+import path from 'path';
 
 class App{
     express: express.Application
@@ -10,6 +11,7 @@ class App{
         this.database();
         this.middleware();
         this.router();
+        this.exposePublic();
     }
 
     private database(){
@@ -30,6 +32,10 @@ class App{
 
     private router(){
         this.express.use(router);
+    }
+
+    private exposePublic(){ 
+        this.express.use(express.static(path.join(__dirname, '..', "public")))
     }
 
 }
