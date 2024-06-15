@@ -12,6 +12,11 @@ class Hello{
         res.sendFile(indexPath);
     }
 
+    async myBooks(req: Request, res: Response) {
+        const indexPath = path.join(__dirname, '../public/meus-livros/index.html');
+        res.sendFile(indexPath);
+    }
+
 }
 
 export default new Hello();

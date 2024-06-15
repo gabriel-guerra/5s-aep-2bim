@@ -18,5 +18,10 @@ async function login(e){
         body: JSON.stringify(obj)
     })
 
-    console.log(await response.json())
+    console.log(response)
+    if (response == false) alert('E-mail ou senha inválida');
+
+    if (response.redirected) {
+        window.location.href = response.url;
+    } 
 }

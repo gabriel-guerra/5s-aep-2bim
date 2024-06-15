@@ -12,9 +12,11 @@ export { router }
 router.get('/hello', hello.hw)
 
 router.get('/', hello.index)
+router.get('/meus-livros', hello.myBooks)
 
 //database
 router.get('/table/user/drop', userController.dropTable)
+router.get('/table/book/drop', bookController.dropTable)
 
 
 router.post('/user/create', userController.create);

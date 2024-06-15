@@ -1,6 +1,7 @@
 import userService from "../service/user.service";
 import { Request, Response } from "express";
 import dataValidation from "../middleware/data.validation";
+import bcrypt from 'bcrypt';
 
 class UserController{
 
@@ -18,6 +19,7 @@ class UserController{
             isAdmin: req.body.isAdmin
         }
 
+        if (await userService.findConditions({email: data.email}).then((r) => r.length) > 0) res.status(400).send(`E-mail já utilizado para cadastro`);
         return res.json((await userService.create(data)))
     }
 
@@ -27,14 +29,23 @@ class UserController{
 
     async findConditions(req: Request, res: Response){
         
-        console.log(req.body);
-        const user = await userService.findConditions(req.body);
-        console.log(user)
-        if(user.length > 0){
-            res.send(true);
-        }else{
-            res.send(false);
+        const u = {
+            email: req.body.email
         }
+
+        const user = await userService.findConditions(u);
+        const ans = await bcrypt.compare(req.body.password, user[0].password).then((result) => result);
+        //return res.json(ans);
+        console.log(ans)
+
+        //return ans ? res.redirect('http://localhost:3000/meus-livros') : null;
+
+        if(ans){
+            return res.redirect('http://localhost:3000/meus-livros')
+        }else{
+            return false;
+        }
+
     }
 
 
