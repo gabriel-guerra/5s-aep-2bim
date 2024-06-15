@@ -1,0 +1,243 @@
+[
+    {
+      "isbn": "978-3-16-148410-0",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "pages": 281,
+      "isAvailable": true
+    },
+    {
+      "isbn": "978-0-7432-7356-5",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "pages": 328,
+      "isAvailable": false
+    },
+    {
+      "isbn": "978-0-452-28423-4",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "pages": 279,
+      "isAvailable": true
+    },
+    {
+      "isbn": "978-0-14-028333-4",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Tragedy",
+      "pages": 180,
+      "isAvailable": true
+    },
+    {
+      "isbn": "978-0-7432-7355-8",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "genre": "Science Fiction",
+      "pages": 268,
+      "isAvailable": false
+    },
+    {
+      "isbn": "978-0-670-81302-8",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genre": "Fiction",
+      "pages": 214,
+      "isAvailable": true
+    },
+    {
+      "isbn": "978-0-14-118506-4",
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "genre": "Adventure",
+      "pages": 635,
+      "isAvailable": false
+    },
+    {
+      "isbn": "978-0-452-01187-6",
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "genre": "Historical Fiction",
+      "pages": 1225,
+      "isAvailable": true
+    },
+    {
+      "isbn": "978-0-618-00221-3",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "pages": 310,
+      "isAvailable": true
+    },
+    {
+      "isbn": "978-0-7432-7354-1",
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "genre": "Dystopian",
+      "pages": 158,
+      "isAvailable": false
+    },
+    {
+        "isbn": "978-0-679-74558-7",
+        "title": "The Handmaid's Tale",
+        "author": "Margaret Atwood",
+        "genre": "Dystopian",
+        "pages": 311,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-7432-7352-7",
+        "title": "Slaughterhouse-Five",
+        "author": "Kurt Vonnegut",
+        "genre": "Science Fiction",
+        "pages": 275,
+        "isAvailable": false
+    },
+    {
+        "isbn": "978-1-56619-909-4",
+        "title": "Catch-22",
+        "author": "Joseph Heller",
+        "genre": "Satire",
+        "pages": 453,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-452-28424-1",
+        "title": "Jane Eyre",
+        "author": "Charlotte Brontë",
+        "genre": "Romance",
+        "pages": 507,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-7432-7350-3",
+        "title": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde",
+        "genre": "Philosophical Fiction",
+        "pages": 254,
+        "isAvailable": false
+    },
+    {
+        "isbn": "978-0-452-28425-8",
+        "title": "Wuthering Heights",
+        "author": "Emily Brontë",
+        "genre": "Gothic Fiction",
+        "pages": 416,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-06-093546-7",
+        "title": "Beloved",
+        "author": "Toni Morrison",
+        "genre": "Historical Fiction",
+        "pages": 324,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-452-28426-5",
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "genre": "Psychological Fiction",
+        "pages": 671,
+        "isAvailable": false
+    },
+    {
+        "isbn": "978-0-14-144246-4",
+        "title": "Great Expectations",
+        "author": "Charles Dickens",
+        "genre": "Fiction",
+        "pages": 505,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-7432-7351-0",
+        "title": "Frankenstein",
+        "author": "Mary Shelley",
+        "genre": "Gothic Fiction",
+        "pages": 280,
+        "isAvailable": false
+    },
+    {
+        "isbn": "978-0-14-303943-3",
+        "title": "The Kite Runner",
+        "author": "Khaled Hosseini",
+        "genre": "Drama",
+        "pages": 371,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-452-28427-2",
+        "title": "The Catch-22",
+        "author": "Joseph Heller",
+        "genre": "Satire",
+        "pages": 453,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-452-28428-9",
+        "title": "The Odyssey",
+        "author": "Homer",
+        "genre": "Epic Poetry",
+        "pages": 541,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-7432-7353-4",
+        "title": "The Book Thief",
+        "author": "Markus Zusak",
+        "genre": "Historical Fiction",
+        "pages": 552,
+        "isAvailable": false
+    },
+    {
+        "isbn": "978-0-452-28429-6",
+        "title": "Anna Karenina",
+        "author": "Leo Tolstoy",
+        "genre": "Literary Fiction",
+        "pages": 864,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-06-112241-5",
+        "title": "Life of Pi",
+        "author": "Yann Martel",
+        "genre": "Adventure",
+        "pages": 319,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-7432-7357-2",
+        "title": "The Road",
+        "author": "Cormac McCarthy",
+        "genre": "Post-apocalyptic",
+        "pages": 287,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-7432-7358-9",
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez",
+        "genre": "Magic Realism",
+        "pages": 417,
+        "isAvailable": false
+    },
+    {
+        "isbn": "978-0-14-118280-3",
+        "title": "Madame Bovary",
+        "author": "Gustave Flaubert",
+        "genre": "Literary Fiction",
+        "pages": 329,
+        "isAvailable": true
+    },
+    {
+        "isbn": "978-0-452-28430-2",
+        "title": "A Tale of Two Cities",
+        "author": "Charles Dickens",
+        "genre": "Historical Fiction",
+        "pages": 489,
+        "isAvailable": false
+    }      
+  ]
+  

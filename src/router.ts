@@ -11,12 +11,17 @@ export { router }
 
 router.get('/hello', hello.hw)
 
+router.get('/', hello.index)
+router.get('/meus-livros', hello.myBooks)
+
 //database
 router.get('/table/user/drop', userController.dropTable)
+router.get('/table/book/drop', bookController.dropTable)
 
 
 router.post('/user/create', userController.create);
 router.get('/user', userController.findAll);
+router.post('/user', userController.findConditions);
 
 router.post('/book/create', bookController.create);
 router.get('/book', bookController.findAll);

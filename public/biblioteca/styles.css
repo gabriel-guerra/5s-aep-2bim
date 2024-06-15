@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.book-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+}
+
+.book-list li {
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.book-list li h3 {
+    margin-top: 0;
+}
+
+.book-list li .read-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    color: white;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-list li .read-button:hover {
+    background-color: #1976D2;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 1em 2em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "fullName": "Gabriel Guerra",
+        "birthdate": "01/12/1980",
+        "email": "gabriel@teste.com",
+        "password": "123",
+        "isAdmin": "false"
+    },
+    {
+        "fullName": "Administrator",
+        "birthdate": "01/01/1900",
+        "email": "admin@teste.com",
+        "password": "admin",
+        "isAdmin": "true"
+    }
+]
