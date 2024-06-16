@@ -1,6 +1,6 @@
 # 5s-aep-2bim
 - Gabriel Sestito Guerra RA: 23025044-2
-- : Lucas Niguti D Santos RA:22019975-2
+- Lucas Niguti D Santos RA:22019975-2
 
 # Instalar a API
 
